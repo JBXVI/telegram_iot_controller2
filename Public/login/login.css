@@ -1,0 +1,36 @@
+
+a{
+    text-decoration: none !important;
+    color: white !important;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black !important;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.centered-div {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    /* Optional: Set a max-width for responsive design */
+    max-width: 90%;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 200px;
+    height: 100px;
+}

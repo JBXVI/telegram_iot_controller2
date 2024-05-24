@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://res.cloudinary.com/dr0y2usoy/image/upload/v1716051776/Elsocket__8_-removebg-preview_hqcfon.png" type="image/x-icon">
+    <title>Elsocket Home</title>
+    <link rel="stylesheet" href="./home/home.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!--axios-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="centered-div">
+            <img class="logo" src="https://res.cloudinary.com/dr0y2usoy/image/upload/v1716480743/Elsocket__9___1_-removebg-preview_bsaayj.png">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item mainMenu">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button optionButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="bi bi-coin"></i> <span class="option">Upgrade</span>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body  menuContent">
+                        <div class="plan">
+                            <h4 class="planHead">Plan A</h4>
+                            <i class="bi bi-people"></i> <span>Devices : 7 (max)</span><br>
+                            <i class="bi bi-rulers"></i> <span>Request size : 100B (max)</span><br>
+                            <i class="bi bi-send"></i> <span>Request Nos : 400 (max)</span><br>
+                            <i class="bi bi-coin"></i> <span> : 3$/mo</span><br>
+                            <button type="button" class="btn btn-success buyNowButton">Buy Now!</button>
+                        </div>
+                        <br>
+                        <div class="plan">
+                            <h4>Plan B</h4>
+                            <i class="bi bi-people"></i> <span>Devices : 10 (max)</span><br>
+                            <i class="bi bi-rulers"></i> <span>Request size : 200B (max)</span><br>
+                            <i class="bi bi-send"></i> <span>Request Nos : 900 (max)</span><br>
+                            <i class="bi bi-coin"></i> <span> : 4$/mo</span><br>
+                            <button type="button" class="btn btn-success buyNowButton">Buy Now!</button>
+                        </div>
+                        <br>
+                        <div class="plan">
+                            <h4>Plan C</h4>
+                            <i class="bi bi-people"></i> <span>Devices : 15 (max)</span><br>
+                            <i class="bi bi-rulers"></i> <span>Request size : 280B (max)</span><br>
+                            <i class="bi bi-send"></i> <span>Request Nos : 1200 (max)</span><br>
+                            <i class="bi bi-coin"></i> <span> : 5$/mo</span><br>
+                            <button type="button" class="btn btn-success buyNowButton">Buy Now!</button>
+                        </div>
+                     
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mainMenu">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed optionButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="bi bi-controller"></i> <span class="option">Tokens</span>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body menuContent">
+                        
+                        <label for="adminTokenInput" class="form-label">Admin</label>
+                        <div class="input-group mb-3">
+                        <span class="input-group-text groupTitle" id="basic-addon3" >Token</span>
+                        <input type="text" class="form-control tokenInput" id="adminTokenInput" aria-describedby="basic-addon3" value="asdsadasfdasdas" disabled>
+                        </div>
+
+                        <label  class="form-label">Devices</label>
+                        <div class="devices" id="devices">
+                            <div class="input-group mb-3"><span class="input-group-text groupTitle" id="basic-addon3" >Client1</span><input type="text" class="form-control tokenInput"  aria-describedby="basic-addon3" value="asdsadasfdasdas" disabled></div>
+                        </div>
+                        
+
+
+
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mainMenu">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed optionButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <i class="bi bi-person-circle"></i> <span class="option">Account</span>
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body menuContent">
+                      <img src="https://lh3.googleusercontent.com/a/ACg8ocJKIZ98NE27-W2yiYDJLpygMT9mYuLrOe51_GUKVpX3Z8Fjxw=s96-c" class="profilePic"  id="profilePic"><br>
+                      <span> Name : <strong id="name">Jibin</strong><br>
+                      <span> Email : <strong id="email">jibin@gmail.com</strong><br>
+                      <span> Max Devices : <strong id="maxDev">5</strong><br>
+                      <span> Plan : <strong id="planName">Plan B</strong><br>
+                      <span> Join Date : <strong id="joinDate">15/2/24</strong><br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<br>
+              <button type="button" class="btn btn-dark logoutButton" id="logout">LOGOUT</button>
+        </div>
+    </div>
+    
+    <script src="./home/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+
+a{
+    text-decoration: none !important;
+    color: white !important;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212529 !important;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.centered-div {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    /* Optional: Set a max-width for responsive design */
+ 
+    box-sizing: border-box;
+    background-color: #2b3035;
+}
+
+.logo{
+    width: 300px;
+    height: 150px;
+}
+
+.plan{
+    text-align: start;
+}
+
+.plaHead{
+    text-align: center !important;
+}
+
+.buyNowButton{
+    margin-top: 10px;
+    width: 100% !important;
+}
+
+
+.option{
+    margin-left: 10px;
+}
+.mainMenu{
+    border-color: #212529 !important;
+    
+}
+
+.profilePic{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.menuContent{
+    background-color: #212529 !important;
+    color: white;
+    height: 190px;
+    overflow: auto;
+    padding: 10px;
+    text-align: start ;
+}
+.optionButton{
+    background-color: #212529 !important;
+    color: white !important;
+    border: 2px solid #212529 !important;
+}
+
+.logoutButton{
+    margin-top: 20px;
+    width: 100% !important;
+}
+
+.groupTitle{
+    background-color: #212529 !important;
+    border-color: #2b3035 !important;
+    color: white !important;
+    
+}
+
+.tokenInput{
+    background-color: #2b3035 !important;
+    border-color: #2b3035 !important;
+    color: white !important;
+}
+
+/* For WebKit browsers */
+::-webkit-scrollbar {
+    width: 8px;  /* Width of the scrollbar */
+    height: 8px; /* Height of the scrollbar (for horizontal scroll) */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;  /* Hide the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;  /* Color of the scrollbar thumb */
+    border-radius: 10px;  /* Rounded corners of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;  /* Color of the scrollbar thumb on hover */
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: thin;  /* Makes the scrollbar thin */
+    scrollbar-color: #888 transparent;  /* Sets the thumb color and makes the track transparent */
+}
